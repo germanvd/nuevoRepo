@@ -19,7 +19,7 @@ var indexRoutes = require ("./routes/index");
 app.use(methodOverride('_method'));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(expressSanitizer());
-mongoose.connect("mongodb://localhost:27017/blog_app");
+mongoose.connect("mongodb://<dbuser>:<dbpassword>@ds113670.mlab.com:13670/agenda");
 app.set("view engine", "ejs");
 app.use (express.static(__dirname + "/public"));
 app.use(flash());

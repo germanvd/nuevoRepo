@@ -46,6 +46,6 @@ app.use(function(req, res, next) {
 app.use (indexRoutes);
 app.use (blogRoutes);
 app.use (commentRoutes);
-app.set('port', process.env.PORT || 3000);
-app.listen (process.env.PORT|| 3000, function() {
- console.log ("Use el localhost:3000 para ver este sitio!"); });
+app.set('port', process.env.PORT || 80);
+app.listen (process.env.PORT|| 80, function() {
+ console.log ("Use el localhost:80 para ver este sitio!"); });

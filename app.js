@@ -19,7 +19,7 @@ var indexRoutes = require ("./routes/index");
 app.use(methodOverride('_method'));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(expressSanitizer());
-mongoose.connect("mongodb://<germanvd>:<@#Gvd55999>@ds113670.mlab.com:13670/agenda");
+mongoose.connect('mongodb://germanvd:Gvd55999@ds113670.mlab.com:13670/agenda');
 app.set("view engine", "ejs");
 app.use (express.static(__dirname + "/public"));
 app.use(flash());
@@ -48,4 +48,4 @@ app.use (blogRoutes);
 app.use (commentRoutes);
 app.set('port', process.env.PORT ||3000);
 app.listen (process.env.PORT||3000, function() {
- console.log ("Use el localhost:80 para ver este sitio!"); });
+ console.log ("conectado al puerto 3000!"); });

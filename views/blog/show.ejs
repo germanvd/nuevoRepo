@@ -1,47 +1,47 @@
 <% include ../partials/header %>
 
 <div class="container">
-   
+
    <div class="nameImage_showPage">
       <h1><%= foundBlog.name %></h1>
       <img id="image_showPage" class="img-thumbnail" src="<%= foundBlog.image %>"></img>
    </div>
-   
+
    <div id="blogDescription_showPage">
       <p><%- foundBlog.description %></p>
       <p><em>Blog post by <%= foundBlog.author.username %></em></p>
    </div>
-   
+
    <div id="mainButtons_showPage">
       <% if(currentUser && foundBlog.author.id.equals (currentUser.id)) { %>
          <div class="buttons_showPage">
-             <a class="btn btn-danger" href="/blogs/<%= foundBlog._id %>/edit">Edit blog</a>
+             <a class="btn btn-danger" href="/blogs/<%= foundBlog._id %>/edit">Editar blog</a>
          </div>
          <div class="buttons_showPage">
             <form method="POST" action="/blogs/<%= foundBlog._id %>?_method=DELETE">
-               <button type="submit" class="btn btn-danger">Delete blog</button>
+               <button type="submit" class="btn btn-danger">Borrar Comentario</button>
             </form>
          </div>
       <% } %>
       <div class="buttons_showPage">
-          <a href="/blogs/<%= foundBlog._id %>/comments/new" class="btn btn-success">New comment</a>
+          <a href="/blogs/<%= foundBlog._id %>/comments/new" class="btn btn-success">Nuevo Comentario</a>
       </div>
    </div>
-   
+
    <div class="well">
       <h4>Comments:</h4>
       <% foundBlog.comments.forEach (function(comment) { %>
          <div id="comment_showPage">
             <p class="commentText"><strong><%= comment.author.username %></strong></p>
             <p class="commentText"><%= comment.text %></p>
-            
+
             <% if(currentUser && comment.author.id.equals (currentUser.id)) { %>
                <div class="buttons_showPage">
                   <a href="/blogs/<%= foundBlog._id %>/comments/<%= comment._id %>/edit" class="btn btn-danger btn-sm">Edit</a>
                </div>
                <div class="buttons_showPage">
                   <form method="POST" action="/blogs/<%= foundBlog._id %>/comments/<%= comment._id %>?_method=DELETE">
-                     <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                     <button type="submit" class="btn btn-danger btn-sm">Borrar</button>
                   </form>
                </div>
             <% } %>
@@ -49,7 +49,7 @@
          </div>
       <% }); %>
    </div>
-   
+
 </div>
 
 <% include ../partials/footer %>

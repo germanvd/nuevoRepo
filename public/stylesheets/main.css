@@ -1,0 +1,145 @@
+body {
+   background-color: #fcce50;
+   padding-top: 95px;
+   font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+   font-size: 2.5em;
+   font-weight: bold;
+}
+
+hr {
+	border-top: 1px solid #8c8b8b;
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+
+.navbar-fixed-top {
+   background-color: white;
+   height: 65px;
+}
+
+.navbar-default .navbar-brand {
+	font-size: 1.8em;
+	font-weight: bold;
+	color: black;
+	padding: 0 12px; 
+	border: none;
+	line-height: 65px;
+}
+
+.nameImage_showPage {
+  text-align: center;
+}
+
+.thumbnails {
+   float: none;
+   margin: 0 auto;
+   width: 600px;
+   max-width: 95%;
+}
+
+.buttons_showPage {
+   display: inline-block;
+   margin-top: 5px;
+}
+
+.form_center {
+   text-align: center;
+   margin-bottom: 20px;
+}
+
+.form_center form {
+   display: inline-block;
+   width: 600px;
+   max-width: 95%;
+}
+
+.form_mainTitle {
+   text-align: center;
+   margin: 20px 0 40px 0;
+   font-weight: bold;
+}
+
+.well {
+   width: 600px;
+   max-width: 95%;
+   float: none;
+   margin: 30px auto;
+}
+
+.commentText {
+   margin-bottom: 10px;
+}
+
+.loginSignupInputs {
+   width: 300px;
+   margin: 0 auto;
+   max-width: 95%;
+}
+
+.alert {
+   width: 400px;
+   max-width: 80%;
+   margin: 0 auto 20px auto;
+   text-align: center;
+}
+
+.navbar-collapse {
+   background-color: white;
+   border-top: none;
+   box-shadow: none;
+   line-height: 65px;
+}
+
+.navbar-default .navbar-toggle {
+   margin-top: 15px;
+   margin-right: 12px;
+   border: black solid 2px;
+   background-color: #fcce50 !important;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: black;
+}
+
+#headerButtons {
+   padding-right: 12px;
+   padding-left: 12px;
+}
+
+#blogDescription_showPage {
+   width: 1000px;
+   max-width: 95%;
+   font-size: 1.2em;
+   margin: 20px auto;
+   float: none;
+}
+
+#image_showPage {
+   width: 600px;
+   max-width: 95%;
+   margin-top: 20px;
+}
+
+#mainButtons_showPage {
+   text-align: center;
+}
+
+#comment_showPage {
+   margin-top: 20px;
+   font-size: 1.1em;
+}
+
+#currentUser_header {
+   color: inherit;
+   line-height: 65px;
+   margin-right: 9px;
+   text-decoration: underline;
+}
+
+#navbar_username {
+   line-height: 65px;
+}
+

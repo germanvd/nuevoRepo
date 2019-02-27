@@ -1,0 +1,28 @@
+<% include ../partials/header %>
+
+<div class="container">
+   <h2 class="form_mainTitle">Create your new blog post</h2>
+   
+   <div class="row">
+      <div class="form_center">
+         <form id="new_form" action="/blogs" method="POST">
+            <div class="form-group">
+               <label for="blogTitle">Blog title</label>
+               <input type="text" name="blog[name]" placeholder="Type blog title..." class="form-control" id="blogTitle"></input>
+            </div>
+            <div class="form-group">
+               <label for="blogImage">Image</label>
+               <input type="text" name="blog[image]" placeholder="Copy image URL..." class="form-control" id="blogImage"></input>
+            </div>
+            <div class="form-group">
+               <label for="blogDescription">Description</label>
+               <textarea class="form-control" rows="10" name="blog[description]" placeholder="Tell your story..." id="blogDescription"></textarea>
+            </div>
+               <input type="submit" class="btn btn-danger"></input>
+            </div>
+         </form>
+      </div>
+   </div>
+</div>
+
+<% include ../partials/footer %>

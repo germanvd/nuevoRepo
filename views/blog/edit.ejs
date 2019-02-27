@@ -1,0 +1,29 @@
+<% include ../partials/header %>
+
+<div class="container">
+   <h2 class="form_mainTitle">Edit blog post - <%= foundBlog.name %></h2>
+
+   <div class="row">
+      <div class="form_center">
+         <form action="/blogs/<%= foundBlog._id %>?_method=PUT" method="POST">
+            <div class="form-group">
+               <label for="blogTitle">Titulo</label>
+               <input type="text" name="name" value="<%= foundBlog.name %>" class="form-control" id="blogTitle"></input>
+            </div>
+            <div class="form-group">
+               <label for="blogImage">Imagen</label>
+               <input type="text" name="image" class="form-control" id="blogImage" value="<%= foundBlog.image %>"></input>
+            </div>
+            <div class="form-group">
+               <label for="blogDescription">Descripción</label>
+               <textarea class="form-control" rows="10" name="description"><%= foundBlog.description %></textarea>
+            </div>
+               <input type="submit" class="btn btn-danger"></input>
+            </div>
+         </form>
+      </div>
+   </div>
+
+</div>
+
+<% include ../partials/footer %>

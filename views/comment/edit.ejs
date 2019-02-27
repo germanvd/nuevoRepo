@@ -1,0 +1,21 @@
+<% include ../partials/header %>
+
+<div class="container">
+    
+   <h2 class="form_mainTitle"><%= foundComment.author.username %> edit your comment for <%= foundBlog.name %> blog</h2>
+   
+   <div class="row">
+      <div class="form_center">
+         <form action="/blogs/<%= foundBlog._id %>/comments/<%= foundComment._id %>?_method=PUT" method="POST">
+            <div class="form-group">
+               <label for="commentText">Comment text</label>
+               <input type="text" name="text" value="<%= foundComment.text %>" class="form-control" id="commentText"></input>
+            </div>
+            <input type="submit" class="btn btn-danger"></input>
+         </form>
+      </div>
+   </div>
+   
+</div>
+
+<% include ../partials/footer %>

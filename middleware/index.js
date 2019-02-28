@@ -18,7 +18,7 @@ middlewareObj.checkCampgroundOwnership = function (req, res, next) {
             }
         });
    } else {
-        req.flash ("error", "You have to be logged in to do that!");
+        req.flash ("error", "Debes de estar Logueado para realizar esto!");
         res.redirect ("/login");
    }
 };
@@ -38,7 +38,7 @@ middlewareObj.checkCommentOwnership = function (req, res, next) {
             }
         });
    } else {
-        req.flash ("error", "You have to be logged in to do that!");
+        req.flash ("error", "Debes de estar Logueado para realizar esto!");
         res.redirect ("/login");
    }
 };
@@ -47,7 +47,7 @@ middlewareObj.isLoggedIn = function (req, res, next) {
     if (req.isAuthenticated()) {
         return next();
     }
-    req.flash ("error", "You have to be logged in to do that!");
+    req.flash ("error", "Debes de estar Logueado para realizar esto!");
     res.redirect ("/login");
 };
 

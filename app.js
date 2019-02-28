@@ -46,6 +46,6 @@ app.use(function(req, res, next) {
 app.use (indexRoutes);
 app.use (blogRoutes);
 app.use (commentRoutes);
-app.set('port', process.env.PORT ||3000);
-app.listen (process.env.PORT||3000, function() {
- console.log ("conectado al puerto 3000!"); });
+app.set('port', process.env.PORT ||80);
+app.listen (process.env.PORT||80, function() {
+ console.log ("Exitosamente Conectado con Mongodb!"); });

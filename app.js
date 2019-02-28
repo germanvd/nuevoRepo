@@ -17,7 +17,7 @@ var blogRoutes = require ("./routes/blogs");
 var indexRoutes = require ("./routes/index");
 
 app.use(methodOverride('_method'));
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({ extended: false}));
 app.use(expressSanitizer());
 mongoose.connect('mongodb://germanvd:Gvd55999@ds113670.mlab.com:13670/agenda');
 app.set("view engine", "ejs");

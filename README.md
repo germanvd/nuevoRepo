@@ -1,5 +1,5 @@
 Blog web app with ExpressJS, NodeJS & MongoDB
-https://germanvdinfo.heroku.com/blogs
+https://germanvdinfo.herokuapp.com/blogs
 #nuevo
 echo "# nuevo" >> README.md
 git init

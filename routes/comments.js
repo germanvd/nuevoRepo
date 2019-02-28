@@ -62,7 +62,7 @@ router.put ("/blogs/:id/comments/:commentId", middleware.checkCommentOwnership, 
         if(err) {
             console.log(err); 
         } else {
-            req.flash ("success", "Has realizado un comentario!");
+            req.flash ("success", "Has Actualizado un comentario!");
             res.redirect ("/blogs/" + req.params.id);
         }
     });

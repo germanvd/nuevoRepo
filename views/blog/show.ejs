@@ -29,7 +29,7 @@
    </div>
 
    <div class="well">
-      <h4>Comments:</h4>
+      <h4>Comentarios:</h4>
       <% foundBlog.comments.forEach (function(comment) { %>
          <div id="comment_showPage">
             <p class="commentText"><strong><%= comment.author.username %></strong></p>
@@ -37,7 +37,7 @@
 
             <% if(currentUser && comment.author.id.equals (currentUser.id)) { %>
                <div class="buttons_showPage">
-                  <a href="/blogs/<%= foundBlog._id %>/comments/<%= comment._id %>/edit" class="btn btn-danger btn-sm">Edit</a>
+                  <a href="/blogs/<%= foundBlog._id %>/comments/<%= comment._id %>/edit" class="btn btn-danger btn-sm">Editar</a>
                </div>
                <div class="buttons_showPage">
                   <form method="POST" action="/blogs/<%= foundBlog._id %>/comments/<%= comment._id %>?_method=DELETE">

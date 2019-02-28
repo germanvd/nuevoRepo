@@ -31,7 +31,7 @@ router.post ("/blogs/:id/comments", function (req, res) {
                     newComment.save();
                     foundBlog.comments.push(newComment);
                     foundBlog.save();
-                    req.flash ("success", "You have created new comment!")
+                    req.flash ("success", "Has creado un nuevo comentario!")
                     res.redirect ("/blogs/" + req.params.id);
                 }
             });
@@ -62,7 +62,7 @@ router.put ("/blogs/:id/comments/:commentId", middleware.checkCommentOwnership, 
         if(err) {
             console.log(err); 
         } else {
-            req.flash ("success", "Your comment has been updated!");
+            req.flash ("success", "Has realizado un comentario!");
             res.redirect ("/blogs/" + req.params.id);
         }
     });
@@ -80,7 +80,7 @@ router.delete ("/blogs/:id/comments/:commentId", middleware.checkCommentOwnershi
                 } else {
                     foundBlog.comments.remove(req.params.commentId); 
                     foundBlog.save();
-                    req.flash ("success", "Your comment has been deleted!");
+                    req.flash ("success", "Has borrado un comentario!");
                     res.redirect ("/blogs/" + req.params.id);
                 }
             });

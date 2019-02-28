@@ -2,14 +2,14 @@
 
 <div class="container">
     
-   <h2 class="form_mainTitle">Write a comment for <%= foundBlog.name %></h2>
+   <h2 class="form_mainTitle">Escriba un comentario para: <%= foundBlog.name %></h2>
    
    <div class="row">
       <div class="form_center">
          <form action="/blogs/<%= foundBlog._id %>/comments" method="POST">
             <div class="form-group">
-               <label for="commentText">Comment text</label>
-               <input type="text" name="text" placeholder="Write something" class="form-control" id="commentText"></input>
+               <label for="commentText">Texto del Comentario</label>
+               <input type="text" name="text" placeholder="Escriba algo" class="form-control" id="commentText"></input>
             </div>
             <input type="submit" class="btn btn-danger"></input>
          </form>

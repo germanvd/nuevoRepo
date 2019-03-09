@@ -1,5 +1,5 @@
 body {
-   background-color: #a1a162;
+   background-color: #f0a02c;
    padding-top: 95px;
    font-family: 'Montserrat', sans-serif;
 }
@@ -110,11 +110,13 @@ hr {
 }
 
 #blogDescription_showPage {
-   width: 1000px;
+   width: 600px;
    max-width: 95%;
    font-size: 1.2em;
    margin: 20px auto;
    float: none;
+   text-align: justify;
+   color: white
 }
 
 #image_showPage {

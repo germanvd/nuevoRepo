@@ -29,7 +29,7 @@ router.post ("/blogs", function (req, res) {
          newBlog.author.id = req.user._id;
          newBlog.author.username = req.user.username;
          newBlog.save();
-         req.flash ("success", "You have created new blog post!");
+         req.flash ("success", "Entrada creada correctamente!");
          res.redirect ("/blogs");
       }
     });
@@ -69,7 +69,7 @@ router.put ("/blogs/:id", middleware.checkCampgroundOwnership, function (req, re
       if(err) {
          console.log(err); 
       } else {
-         req.flash ("success", "You have updated your blog post!")
+         req.flash ("success", "Actualizado correctamente!")
          res.redirect ("/blogs/" + id);
       }
    });
@@ -82,7 +82,7 @@ router.delete ("/blogs/:id", middleware.checkCampgroundOwnership, function(req, 
       if(err) {
          console.log(err);
       } else {
-         req.flash ("success", "Your blog post has been deleted!");
+         req.flash ("success", "Borrado correctamente!");
          res.redirect ("/blogs/");
       }
    });

@@ -1,5 +1,5 @@
 body {
-   background-color: #8FBC8F;
+   background-color: #D2691E;
 
    padding-top: 95px;
    font-family: 'arial', sans-serif;
@@ -17,7 +17,7 @@ hr {
 }
 
 .navbar-fixed-top {
-   background-color: white;
+   background-color: #FFFFE0;
    height: 65px;
 }
 
@@ -89,7 +89,7 @@ hr {
 }
 
 .navbar-collapse {
-   background-color: white;
+   background-color: #FFFFE0;
    border-top: none;
    box-shadow: none;
    line-height: 65px;
@@ -137,10 +137,12 @@ hr {
 }
 
 #currentUser_header {
-   color: inherit;
+   font-size: 1em;
+   font-weight: bold;
+   color: #FFEBCD   ;
    line-height: 65px;
    margin-right: 9px;
-   text-decoration: underline;
+   text-decoration: none;
 }
 
 #navbar_username {

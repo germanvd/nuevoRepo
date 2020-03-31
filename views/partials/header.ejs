@@ -20,9 +20,7 @@
               <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="/blogs">Piedra Blca.: "S.O.S"<span class="glyphicon glyphicon-globe" aria-hidden="true"></span></a>
-            <% if (currentUser) { %>
-               <a id="currentUser_header" class="pull-right"><strong><%= currentUser.username %>!</strong></a>
-            <% } %>
+            
          </div>
 
          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -36,8 +34,22 @@
                <% } %>
             </ul>
          </div>
-      </div>
-   </nav>
+         </div>
+
+</nav>
+<div class="container">
+   <div class="card">
+  <div class="card-body"><% if (currentUser) { %>
+               <a id="currentUser_header" class="pull-left">H O L A: <strong><%= currentUser.username %>&nbsp;<span class="glyphicon glyphicon-user" aria-hidden="true"></span></strong></a>
+            <% } %>
+   </div>
+</div>
+   
+</div>
+
+
+
+  
 
    <% if (success_messages && success_messages.length > 0) { %>
       <div class="alert alert-success" role="alert">

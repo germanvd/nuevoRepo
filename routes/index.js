@@ -25,7 +25,7 @@ router.post ("/register", function (req, res) {
             res.redirect ("/register");
         } else {
             passport.authenticate ("local")(req, res, function() {
-                req.flash ("success", "Welcome on board :)");
+                req.flash ("success", "Bienvenido :)");
                 res.redirect("/blogs");
             });
         }
@@ -40,7 +40,7 @@ router.get ("/login", function (req, res) {
 //HANDLING LOGIN
 router.post ("/login", passport.authenticate ("local", {
     successRedirect: "/blogs",
-    successFlash: "Welcome",
+    successFlash: "Bienvenido",
     failureRedirect: "/login",
     failureFlash: true
 }), function (req, res) {
@@ -48,7 +48,7 @@ router.post ("/login", passport.authenticate ("local", {
 
 //LOGOUT
 router.get ("/logout", function(req, res) {
-    req.flash("success", "You are logged out!");
+    req.flash("success", "Has Salido del Blogs!");
     req.logout();
     res.redirect("/blogs");
 });

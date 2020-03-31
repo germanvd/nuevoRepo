@@ -25,7 +25,7 @@ router.post ("/register", function (req, res) {
             res.redirect ("/register");
         } else {
             passport.authenticate ("local")(req, res, function() {
-                req.flash ("success", "Bienvenido :)");
+                req.flash ("success", "Bienvenido a este Blogs :)");
                 res.redirect("/blogs");
             });
         }

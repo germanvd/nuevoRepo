@@ -2,7 +2,7 @@ body {
    background-color: #8FBC8F;
 
    padding-top: 95px;
-   font-family: 'courier', sans-serif;
+   font-family: 'arial', sans-serif;
 }
 
 h1 {
@@ -41,12 +41,6 @@ hr {
    max-width: 95%;
 }
 
-.thumbnails_chat {
-   float: none;
-   margin: 20 auto;
-   width: 800px;
-   max-width: 95%;
-}
 
 .buttons_showPage {
    display: inline-block;
@@ -113,8 +107,8 @@ hr {
 }
 
 #headerButtons {
-   padding-right: 12px;
-   padding-left: 12px;
+   padding-right: 20px;
+   padding-left: 20px;
 }
 
 #blogDescription_showPage {

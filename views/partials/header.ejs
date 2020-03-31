@@ -19,7 +19,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/blogs">Conciencia Pura<span class="glyphicon glyphicon-globe" aria-hidden="true"></span></a>
+            <a class="navbar-brand" href="/blogs">P.B EN CUARENTENA<span class="glyphicon glyphicon-globe" aria-hidden="true"></span></a>
             <% if (currentUser) { %>
                <a id="currentUser_header" class="pull-right"><strong><%= currentUser.username %>!</strong></a>
             <% } %>
@@ -27,10 +27,10 @@
 
          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right" id="headerButtons">
-               <a href="/blogs/new" class="btn btn-success">Nuevo Blog</a>
+               <a href="/blogs/new" class="btn btn-success">Crear Post</a>
                <% if (!currentUser) { %>
-                  <a href="/register" class="btn btn-danger">Registrarse</a>
-                  <a href="/login" class="btn btn-danger">Identificarse</a>
+                  <a href="/register" class="btn btn-danger">Registrese</a>
+                  <a href="/login" class="btn btn-danger">Identifiquese</a>
                <% } else { %>
                   <a href="/logout" class="btn btn-danger">Salir</a>
                <% } %>

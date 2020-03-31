@@ -48,4 +48,4 @@ app.use (blogRoutes);
 app.use (commentRoutes);
 app.set('port', process.env.PORT ||80);
 app.listen (process.env.PORT||80, function() {
- console.log ("Exitosamente Conectado con Mongodb!"); });
+ console.log ("GVD tea has conectado exitosamente con Mongodb!"); });

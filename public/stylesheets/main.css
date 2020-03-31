@@ -41,6 +41,13 @@ hr {
    max-width: 95%;
 }
 
+.thumbnails_chat {
+   float: none;
+   margin: 20 auto;
+   width: 800px;
+   max-width: 95%;
+}
+
 .buttons_showPage {
    display: inline-block;
    margin-top: 5px;
